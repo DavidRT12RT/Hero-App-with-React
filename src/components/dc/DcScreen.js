@@ -6,7 +6,7 @@ import { HeroList } from "../hero/HeroList";
 export const DcScreen = () => {
   return (
     <>
-      <HeroList kaka={"DC Comics"} />
+      <HeroList publisher={"DC Comics"} />
     </>
   );
 };

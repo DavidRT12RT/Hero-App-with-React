@@ -1,10 +1,11 @@
 //Importaciones de 3 primero
 import { Routes, Route } from "react-router-dom";
+import { Navbar } from "../ui/Navbar";
 import { DcScreen } from "../dc/DcScreen";
 import { MarvelScreen } from "../marvel/MarvelScreen";
 import { SearchScreen } from "../search/SearchScreen";
-import { Navbar } from "../ui/Navbar";
 import { HeroScreen } from "../hero/HeroScreen";
+
 export const DashboradRoutes = () => {
   return (
     <>

@@ -1,9 +1,9 @@
 import React, { useMemo } from "react";
+import queryString from "query-string";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useForm } from "../../Hooks/useForm";
 import { getHeroesByName } from "../../selectors/getHeroesByName";
 import { HeroCard } from "../hero/HeroCard";
-import queryString from "query-string";
 
 export const SearchScreen = () => {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ export const SearchScreen = () => {
 
   const { searchText } = formValues;
   const heroesFileted = useMemo(() => getHeroesByName(q), [q]);
-  /*useMemo es una función que memoriza el valor queretorna la función que le 
+  /*useMemo es una función que memoriza el valor que retorna la función que le 
     pasemos como callback y solo cambiara si el segundo argumento cambia */
   const handleSearch = (e) => {
     e.preventDefault();
@@ -49,7 +49,7 @@ export const SearchScreen = () => {
           <h4>Resultados</h4>
           <hr />
           {q === "" ? (
-            <div className="alert alert-info">Buscar un heroe</div>
+            <div className="alert alert-info">Busca un heroe</div>
           ) : (
             heroesFileted.length === 0 && (
               <div className="alert alert-danger">
