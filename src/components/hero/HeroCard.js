@@ -9,6 +9,7 @@ export const HeroCard = ({
   characters,
 }) => {
   const imagePath = `/assets/${id}.jpg`;
+
   return (
     <div className="col-md-6 my-3 animate__animated animate_fadeIn">
       <div className="card">
